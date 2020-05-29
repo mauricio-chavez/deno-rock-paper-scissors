@@ -14,4 +14,4 @@ jobs:
         id: tests
         uses: mauricio-chavez/deno-test-action@v1
         with:
-          tests: 'tests.ts'
+          tests: 'app.test.ts'
