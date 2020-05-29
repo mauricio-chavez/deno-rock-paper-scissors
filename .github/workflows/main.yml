@@ -1,0 +1,17 @@
+name: Test my game
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run tests
+        id: tests
+        uses: mauricio-chavez/deno-test-action@v1
+        with:
+          tests: 'tests.ts'
