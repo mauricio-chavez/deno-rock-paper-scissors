@@ -10,6 +10,7 @@ jobs:
   hello_world_job:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Run tests
         id: tests
         uses: mauricio-chavez/deno-test-action@v1
