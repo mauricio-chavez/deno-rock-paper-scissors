@@ -1,4 +1,4 @@
-name: Test my game
+name: Test my app
 
 on:
   push:
