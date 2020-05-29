@@ -11,8 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Run tests
-        id: tests
-        uses: mauricio-chavez/deno-test-action@v1
+      - uses: denolib/setup-deno@master
         with:
-          tests: 'app.test.ts'
+          deno-version: v1.x
+      - run: deno test
